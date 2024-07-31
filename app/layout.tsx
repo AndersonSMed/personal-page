@@ -16,9 +16,9 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  links,
+  moreInfo,
 }: Readonly<{
-  links: React.ReactNode;
+  moreInfo: React.ReactNode;
 }>) {
   return (
     <html lang="en">
@@ -38,33 +38,39 @@ export default function RootLayout({
                 <p className="font-normal text-sm mb-0">Software Engineer</p>
                 <nav>
                   <ul className="list-none flex p-0 gap-2">
-                    <a
-                      href="#"
-                      aria-label="LinkedIn"
-                      className="text-sky-950 visited:text-sky-950"
-                    >
-                      <LinkedInIcon aria-hidden />
-                    </a>
-                    <a
-                      href="#"
-                      aria-label="Github"
-                      className="text-sky-950 visited:text-sky-950"
-                    >
-                      <GitHubIcon aria-hidden />
-                    </a>
-                    <a
-                      href="#"
-                      aria-label="Personal Blog"
-                      className="text-sky-950 visited:text-sky-950"
-                    >
-                      <RssFeedIcon aria-hidden />
-                    </a>
+                    <li>
+                      <a
+                        href="#"
+                        aria-label="LinkedIn"
+                        className="text-sky-950 visited:text-sky-950"
+                      >
+                        <LinkedInIcon aria-hidden />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        aria-label="Github"
+                        className="text-sky-950 visited:text-sky-950"
+                      >
+                        <GitHubIcon aria-hidden />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        aria-label="Personal Blog"
+                        className="text-sky-950 visited:text-sky-950"
+                      >
+                        <RssFeedIcon aria-hidden />
+                      </a>
+                    </li>
                   </ul>
                 </nav>
+                {moreInfo}
               </figcaption>
             </figure>
           </section>
-          {links}
         </main>
       </body>
     </html>
