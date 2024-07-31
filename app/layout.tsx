@@ -40,7 +40,8 @@ export default function RootLayout({
                   <ul className="list-none flex p-0 gap-2">
                     <li>
                       <a
-                        href="#"
+                        href="https://linkedin.com/in/andersonsmedeiros/"
+                        target="_blank"
                         aria-label="LinkedIn"
                         className="text-sky-950 visited:text-sky-950"
                       >
@@ -49,7 +50,8 @@ export default function RootLayout({
                     </li>
                     <li>
                       <a
-                        href="#"
+                        href="https://github.com/AndersonSMed"
+                        target="_blank"
                         aria-label="Github"
                         className="text-sky-950 visited:text-sky-950"
                       >
@@ -59,6 +61,7 @@ export default function RootLayout({
                     <li>
                       <a
                         href="#"
+                        target="_blank"
                         aria-label="Personal Blog"
                         className="text-sky-950 visited:text-sky-950"
                       >
