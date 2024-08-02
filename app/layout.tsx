@@ -43,9 +43,10 @@ export default function RootLayout({
                         href="https://linkedin.com/in/andersonsmedeiros/"
                         target="_blank"
                         aria-label="LinkedIn"
+                        title="LinkedIn"
                         className="text-sky-950 visited:text-sky-950"
                       >
-                        <LinkedInIcon aria-hidden />
+                        <LinkedInIcon aria-hidden fontSize="large" />
                       </a>
                     </li>
                     <li>
@@ -53,9 +54,10 @@ export default function RootLayout({
                         href="https://github.com/AndersonSMed"
                         target="_blank"
                         aria-label="Github"
+                        title="Github"
                         className="text-sky-950 visited:text-sky-950"
                       >
-                        <GitHubIcon aria-hidden />
+                        <GitHubIcon aria-hidden fontSize="large" />
                       </a>
                     </li>
                     <li>
@@ -63,14 +65,14 @@ export default function RootLayout({
                         href="#"
                         target="_blank"
                         aria-label="Personal Blog"
+                        title="Personal Blog"
                         className="text-sky-950 visited:text-sky-950"
                       >
-                        <RssFeedIcon aria-hidden />
+                        <RssFeedIcon aria-hidden fontSize="large" />
                       </a>
                     </li>
                   </ul>
                 </nav>
-                {moreInfo}
               </figcaption>
             </figure>
           </section>
