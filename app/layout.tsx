@@ -16,9 +16,9 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  moreInfo,
+  children,
 }: Readonly<{
-  moreInfo: React.ReactNode;
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
@@ -76,6 +76,7 @@ export default function RootLayout({
               </figcaption>
             </figure>
           </section>
+          {children}
         </main>
       </body>
     </html>
