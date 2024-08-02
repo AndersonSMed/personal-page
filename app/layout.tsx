@@ -1,12 +1,14 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
 import Image from "next/image";
-import { AVATAR_IMAGE_SIZE } from "@/constants";
-
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import RssFeedIcon from "@mui/icons-material/RssFeed";
+
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import { AVATAR_IMAGE_SIZE } from "@/constants";
+import { Analytics } from "@vercel/analytics/react";
+
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -78,6 +80,7 @@ export default function RootLayout({
           </section>
           {children}
         </main>
+        <Analytics />
       </body>
     </html>
   );
