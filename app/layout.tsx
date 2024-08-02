@@ -14,9 +14,35 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Anderson Medeiros",
+  title: "Anderson Medeiros - Software Engineer",
   description:
-    "A highly experienced Software Engineer passionate about facing new challenges, with work experience in TS, JS, and Python.",
+    "A highly experienced programmer with experience in TS, JS, React, and Python and loves to face new challenges.",
+  openGraph: {
+    title: "Anderson Medeiros - Software Engineer",
+    type: "profile",
+    firstName: "Anderson",
+    lastName: "Medeiros",
+    gender: "male",
+    url: "https://andersonmedeiros.net",
+    images: [
+      {
+        url: "https://andersonmedeiros.net/avatar_700x700.jpg",
+        secureUrl: "https://andersonmedeiros.net/avatar_700x700.jpg",
+        type: "image/jpeg",
+        width: 700,
+        height: 700,
+        alt: "Anderson Medeiros picture",
+      },
+      {
+        url: "https://andersonmedeiros.net/avatar_200x200.jpg",
+        secureUrl: "https://andersonmedeiros.net/avatar_200x200.jpg",
+        type: "image/jpeg",
+        width: 200,
+        height: 200,
+        alt: "Anderson Medeiros picture",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
