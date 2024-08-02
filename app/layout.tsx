@@ -5,7 +5,7 @@ import RssFeedIcon from "@mui/icons-material/RssFeed";
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { AVATAR_IMAGE_SIZE } from "@/constants";
+import { AVATAR_IMAGE_PLACEHOLDER, AVATAR_IMAGE_SIZE } from "@/constants";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
@@ -15,7 +15,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Anderson Medeiros",
-  description: "Anderson Medeiros personal page",
+  description:
+    "A highly experienced Software Engineer passionate about facing new challenges, with work experience in TS, JS, and Python.",
 };
 
 export default function RootLayout({
@@ -30,10 +31,12 @@ export default function RootLayout({
           <section>
             <figure className="flex flex-col items-center mb-0">
               <Image
-                src="/avatar.png"
-                alt="Anderson Medeiros"
+                src="/avatar_700x700.jpg"
+                alt="Picture of Anderson Medeiros"
                 width={AVATAR_IMAGE_SIZE}
                 height={AVATAR_IMAGE_SIZE}
+                blurDataURL={AVATAR_IMAGE_PLACEHOLDER}
+                placeholder="blur"
                 className="rounded-full"
               />
               <figcaption className="contents">
